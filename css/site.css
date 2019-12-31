@@ -1,0 +1,155 @@
+@import url(reset.css);
+@import url(fontawesome-all.min.css);
+
+
+:root {
+    --primary-bg-color: white;
+    --secondary-bg-color: whitesmoke;
+    --primary-color: #0099ff;
+    --secondary-color: #0099ff70;
+}
+
+html { scroll-behavior: smooth; } 
+
+/*  MY CSS */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    height: 100vh
+}
+
+.header-wrapper {
+    border-bottom: 2px solid var(--secondary-color);
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background: var(--primary-bg-color);
+}
+
+header {
+    padding: 35px 25px 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    font-size: 2em;
+    padding-right: 50px;
+}
+
+.menu-item {
+    padding: 0 5px;
+}
+
+
+.logo {
+    white-space: nowrap;
+    border: 5px solid black;
+    color: gray;
+    font-family: consolas;
+    font-size: 2em;
+    font-weight: 700;
+ 
+}
+
+.logo:hover .logo-text-inside {
+    width: 100%;
+}
+
+.logo:hover .logo-text-outside {
+    width: 0;
+}
+
+.logo:hover  .logo-icon {
+    width: 100%;
+}
+
+.logo a{
+    display: flex;
+    flex-direction: row;
+    width: 280px;
+}
+
+.logo-icon {
+    background: black;
+    color: var(--primary-bg-color);
+    padding-right: 5px;
+    display: flex;
+    flex-direction: row;
+    transition: width ease 1s;
+    width: 60px;
+    overflow: hidden;
+}
+
+.logo-text-inside {
+    color: white;
+    width: 0;
+    overflow: hidden;
+    transition: width ease 1s;
+}
+
+.logo-text-outside {
+    color: var(--primary-color);
+    transition: width ease 1s;
+    overflow: hidden;
+    width: 100%;
+}
+
+.logo-color {
+    color: var(--primary-color);
+}
+
+#content {
+    margin-top: 100px;
+}
+
+.content-wrapper {
+    padding-top: 20px;
+    background: var(--secondary-bg-color);
+}
+
+.footer-wrapper {
+    padding: 25px 0px;
+    border-top: 2px solid var(--secondary-color);
+    height: 150px;
+}
+
+footer {
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+}
+
+.footer-socials {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-contact {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 15px;    
+}
+
+.container {
+    max-width: 85em;
+    margin-right: auto;
+    margin-left: auto;
+}
