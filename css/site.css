@@ -72,6 +72,7 @@ nav {
     font-family: consolas;
     font-size: 2em;
     font-weight: 700;
+    background: black;
  
 }
 
@@ -100,7 +101,7 @@ nav {
     display: flex;
     flex-direction: row;
     transition: width ease 1s;
-    width: 60px;
+    width: 65px;
     overflow: hidden;
 }
 
@@ -112,6 +113,7 @@ nav {
 }
 
 .logo-text-outside {
+    background: white;
     color: var(--primary-color);
     transition: width ease 1s;
     overflow: hidden;
