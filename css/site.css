@@ -27,7 +27,6 @@ a {
 
 .paragraph:last-child {
     height: calc(100vh - var(--header-height) - var(--footer-height) - var(--footer-border) - var(--paragraph-padding-top));
-    background: red;
 }
 
 .paragraph:nth-child(even){
