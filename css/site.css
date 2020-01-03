@@ -161,10 +161,17 @@ nav {
     
     border-top: 2px solid var(--secondary-color);
     height: var(--footer-height);
+    position: relative;
 }
 
 footer {
-    
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     max-height: 100%;
     margin: 0 auto;
     display: flex;
