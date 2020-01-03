@@ -1,5 +1,17 @@
 @import url(reset.css);
 @import url(fontawesome-all.min.css);
+@font-face {
+    font-family: 'Raleway';
+    src: url("http://findmatthew.com/style/../fonts/Raleway-Regular.ttf"); 
+}
+@font-face {
+    font-family: 'Raleway-semibold';
+    src: url("http://findmatthew.com/style/../fonts/Raleway-SemiBold.ttf"); 
+}
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url("http://findmatthew.com/style/../fonts/Raleway-Bold.ttf"); 
+}
 
 
 :root {
@@ -13,7 +25,13 @@
     --paragraph-padding-top: 20px;
 }
 
-html { scroll-behavior: smooth; } 
+html { 
+    scroll-behavior: smooth; 
+} 
+
+body {
+    font-family: "Raleway";
+}
 
 a {
     color: inherit;
@@ -23,6 +41,7 @@ a {
 .paragraph {
     padding-top: calc(20px + var(--header-height));
     height: calc(100vh - var(--header-height));
+    line-height: 26px;
 }
 
 .paragraph:last-child {
@@ -34,8 +53,10 @@ a {
 }
 
 .p-header {
+    font-family: "Raleway-bold";
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 10px;
 }
 
 .header-wrapper {
@@ -143,6 +164,8 @@ nav {
 }
 
 footer {
+    
+    max-height: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
