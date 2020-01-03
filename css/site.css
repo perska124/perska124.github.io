@@ -12,15 +12,23 @@
 
 html { scroll-behavior: smooth; } 
 
-/*  MY CSS */
-
 a {
     color: inherit;
     text-decoration: none;
 }
 
-p {
-    height: 100vh;
+.paragraph {
+    padding-top: calc(20px + var(--header-height));
+    height: calc(100vh - var(--header-height));
+}
+
+.paragraph:nth-child(even){
+    background: var(--secondary-bg-color);
+}
+
+.p-header {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 .header-wrapper {
@@ -114,13 +122,9 @@ nav {
     color: var(--primary-color);
 }
 
-#content {
-    margin-top: 100px;
-}
 
 .content-wrapper {
     padding-top: 20px;
-    background: var(--secondary-bg-color);
 }
 
 .footer-wrapper {
