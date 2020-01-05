@@ -68,20 +68,25 @@
                     </div>
                 </div>
                 <div class="paragraph" id="contact">
-                    <div class="paragraph-content container">
+                    <div class="paragraph-content container contact">
                         <div class="p-header">CONTACT</div>
                         Want to chat?
-                        <button>Contact me</button>            
+                        <form class="contact-form" action="https://formspree.io/perska124@wp.pl" method="POST">
+
+                            <label for="name">Name</label>
+                            <input id="name-input" type="text" name="name" label="Name" required>
+                            <label for="email">Your email</label>
+                            <input id="email-input" type="email" name="_replyto" required>
+                            <label for="text">Text</label>
+                            <textarea id="text-input" name="text" required></textarea>
+                            <input type="submit" value="Send">
+                        </form>
                     </div>    
                 </div>
             </div>
             <div class="footer-wrapper" >
                 <footer class="container">
-                    <div class="footer-contact">
-                        Want to chat?
-                        <button>Contact me</button>
-                    </div>
-                    
+                    <div class="footer-quote">"Any product that needs a manual to work is broken"<br>Elon Musk</div>                    
                     <div class="footer-socials">                                
                             <a href="https://www.guzik.itch.io" class="social-link">
                                 <i class="fab fa-itch-io"></i>
@@ -101,7 +106,6 @@
                                 <i class="fab fa-github"></i>
                                 <span class="label">GitHub</span>
                             </a>
-                    </div>
                 </footer>
             </div>
         </div>        
