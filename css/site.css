@@ -270,7 +270,7 @@ footer {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 25%;
 }
 
 .contact-form label{
@@ -278,7 +278,7 @@ footer {
 }
 
 .contact-form input{
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: var(--primary-color);
     height: 40px;
     margin-bottom: 20px;
@@ -288,14 +288,17 @@ footer {
 
 .contact-form textarea{
     resize: none;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: var(--primary-color);
     height: 40px;
     margin-bottom: 20px;
     font-size: 1.25em;
-
 }
 
 #text-input {
     height: 200px;
+}
+
+#submit-button {
+    margin-top: 5px;
 }
