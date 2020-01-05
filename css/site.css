@@ -94,6 +94,8 @@ nav {
 
 
 .logo {
+    border-radius: 10px;
+    overflow: hidden;
     white-space: nowrap;
     border: 5px solid black;
     color: gray;
@@ -109,6 +111,7 @@ nav {
 }
 
 .logo:hover .logo-text-outside {
+    padding: 0;
     width: 0;
 }
 
@@ -125,7 +128,7 @@ nav {
 .logo-icon {
     background: black;
     color: var(--primary-bg-color);
-    padding-right: 5px;
+    padding-right: 7px;
     display: flex;
     flex-direction: row;
     transition: width ease 1s;
@@ -141,9 +144,11 @@ nav {
 }
 
 .logo-text-outside {
-    background: white;
+    border-radius: 10px;
+    padding-left: 10px;
+    background: #0B2653;
     color: var(--primary-color);
-    transition: width ease 1s;
+    transition: all ease 1s;
     overflow: hidden;
     width: 100%;
 }
