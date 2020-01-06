@@ -38,6 +38,41 @@ a {
     text-decoration: none;
 }
 
+input {
+    padding: 0px 5px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    font-family: "Raleway";
+}
+
+textarea {
+    padding: 0px 5px;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    font-family: "Raleway";
+}
+
+button {
+    font-family: "Raleway";
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color);
+    height: 40px;
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    transition: all 0.2s;
+}
+
+button:hover {
+    color: white;
+    background-color: var(--secondary-color);
+}
+
 .paragraph {
     padding-top: calc(20px + var(--header-height));
     height: calc(100vh - var(--header-height));
@@ -292,14 +327,6 @@ footer {
     font-weight: 900;    
 }
 
-.contact-form input{
-    border-radius: 10px;
-    border-color: var(--primary-color);
-    height: 40px;
-    margin-bottom: 20px;
-    font-size: 1.25em;
-
-}
 
 .contact-question {
     transition: transform 1s;
@@ -311,10 +338,6 @@ footer {
     align-items: center;
 }
 
-.contact-question button{
-    width: 50%;
-}
-
 .contact-question.hidden {
     transform: rotateY(180deg);
 }
@@ -323,19 +346,8 @@ footer {
     height: 100%;
 }
 
-.paragraph-content button {
-    border-radius: 10px;
-    border-color: var(--primary-color);
-    height: 40px;
-    margin-bottom: 20px;
-    font-size: 1.25em;
-}
-
 .contact-form textarea{
     resize: none;
-    border-radius: 10px;
-    border-color: var(--primary-color);
-    height: 40px;
     margin-bottom: 20px;
     font-size: 1.25em;
 }

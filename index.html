@@ -74,16 +74,13 @@
                         <div class="flip-box">
                             <div id="contactQuestion" class="contact-question">
                                 
-                                <button onclick="onSendClick()">Want to chat?</button>
+                                <button onclick="onSendClick()">Contact me</button >
                             </div>
                             <form id="contactForm" class="contact-form" action="https://formspree.io/perska124@wp.pl" method="POST">
-                                <label for="name">Name</label>
-                                <input id="name-input" type="text" name="name" label="Name" required>
-                                <label for="email">Email</label>
-                                <input id="email-input" type="email" name="_replyto" required>
-                                <label for="text">Message</label>
-                                <textarea id="text-input"" name="text" required></textarea>
-                                <input id="submit-button" type="submit" value="Send">
+                                <input id="name-input" type="text" name="name" placeholder="Name" label="Name" required>
+                                <input id="email-input" type="email" placeholder="Email" name="_replyto" required>
+                                <textarea id="text-input"" name="text" placeholder="Message" required></textarea>
+                                <button id="submit-button" type="submit">Send</button>
                             </form>
                         </div>
                     </div>    
