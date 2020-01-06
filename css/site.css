@@ -127,7 +127,6 @@ nav {
 
 .logo-icon {
     background: black;
-    color: var(--primary-bg-color);
     padding-right: 7px;
     display: flex;
     flex-direction: row;
@@ -246,6 +245,8 @@ footer {
     align-items: center;
     justify-content: space-between;
     transition: font-size 1s;
+    height: 100px;
+    width: 200px;
 }
 
 .about-experience div:hover{
