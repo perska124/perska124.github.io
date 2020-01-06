@@ -140,12 +140,13 @@ nav {
     width: 0;
     overflow: hidden;
     transition: width ease 1s;
+    text-align: center;
 }
 
 .logo-text-outside {
+    text-align: center;
     border-radius: 10px;
-    padding-left: 10px;
-    background: #0B2653;
+    background-color: var(--secondary-bg-color);
     color: var(--primary-color);
     transition: all ease 1s;
     overflow: hidden;
