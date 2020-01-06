@@ -13,5 +13,9 @@ window.onscroll = function() {
             }          
         }
     }
-    
 };
+
+function onSendClick(){
+    document.getElementById("contactForm").classList.add("visible");
+    document.getElementById("contactQuestion").classList.add("hidden");
+}

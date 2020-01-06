@@ -70,17 +70,22 @@
                 <div class="paragraph" id="contact">
                     <div class="paragraph-content container contact">
                         <div class="p-header">CONTACT</div>
-                        Want to chat?
-                        <form class="contact-form" action="https://formspree.io/perska124@wp.pl" method="POST">
-
-                            <label for="name">Name</label>
-                            <input id="name-input" type="text" name="name" label="Name" required>
-                            <label for="email">Email</label>
-                            <input id="email-input" type="email" name="_replyto" required>
-                            <label for="text">Message</label>
-                            <textarea id="text-input" name="text" required></textarea>
-                            <input id="submit-button" type="submit" value="Send">
-                        </form>
+                        
+                        <div class="flip-box">
+                            <div id="contactQuestion" class="contact-question">
+                                
+                                <button onclick="onSendClick()">Want to chat?</button>
+                            </div>
+                            <form id="contactForm" class="contact-form" action="https://formspree.io/perska124@wp.pl" method="POST">
+                                <label for="name">Name</label>
+                                <input id="name-input" type="text" name="name" label="Name" required>
+                                <label for="email">Email</label>
+                                <input id="email-input" type="email" name="_replyto" required>
+                                <label for="text">Message</label>
+                                <textarea id="text-input"" name="text" required></textarea>
+                                <input id="submit-button" type="submit" value="Send">
+                            </form>
+                        </div>
                     </div>    
                 </div>
             </div>
@@ -97,10 +102,10 @@
 
                                 <span class="label">Facebook</span>
                             </a>
-                            <a href="https://instagram.com/perska124" class="social-link">
-                                <i class="fab fa-instagram"></i>
+                            <a href="https://www.linkedin.com/in/damian-guzik-a1a31814a/" class="social-link">
+                                <i class="fab fa-linkedin-in"></i>
 
-                                <span class="label">Instagram</span>
+                                <span class="label">LinkedIn</span>
                             </a>
                             <a href="https://github.com/perska124" class="social-link">
                                 <i class="fab fa-github"></i>
